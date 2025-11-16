@@ -1,0 +1,141 @@
+/* Main Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 60px;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Logo Styles */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-icon {
+    background: #3498db;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+}
+
+/* Navigation Styles */
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+.main-nav a:hover {
+    background: #34495e;
+}
+
+.main-nav a.active {
+    background: #3498db;
+}
+
+.main-nav i {
+    font-size: 1.1rem;
+}
+
+/* User Profile Styles */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar {
+    font-size: 1.8rem;
+    color: #bdc3c7;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.user-role {
+    font-size: 0.8rem;
+    color: #bdc3c7;
+}
+
+.logout-btn {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    padding: 0.5rem;
+}
+
+.logout-btn:hover {
+    color: #e74c3c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .logo-text {
+        display: none;
+    }
+    
+    .main-nav a span {
+        display: none;
+    }
+    
+    .main-nav a {
+        padding: 0.5rem;
+    }
+    
+    .main-nav i {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-name {
+        display: none;
+    }
+    
+    .main-nav ul {
+        gap: 0.5rem;
+    }
+}
